@@ -1,6 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import createEmotionServer from "@emotion/server/create-instance";
-import theme from "../styles/theme";
 import createEmotionCache from "../config/createEmotionCache";
 
 export default class MyDocument extends Document {
@@ -8,14 +7,17 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* PWA primary color */}
-          <meta name="theme-color" content={theme.palette.primary.main} />
-          <link rel="icon" href="/static/favicon.ico" />
+          <title>Mufaddal Ibrahimjee</title>
+          <link rel="icon" href={"/logo/favicon.ico"} />
+          {/* prevent zooming on Iphone  */}
+          <meta
+            name="viewport"
+            content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale = 1.0, user-scalable=no"
+          />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
-          <link rel="stylesheet" href="https://icons.elipa.co/icons.css" />
           {/* Inject MUI styles first to match with the prepend: true configuration. */}
           {this.props.emotionStyleTags}
         </Head>
