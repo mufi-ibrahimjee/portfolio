@@ -45,7 +45,7 @@
       "Netlify",
       "Vercel",
       "Material-UI",
-      "chakra UI",
+      "Chakra-UI",
       "Bootstrap"
     ],
     "Backend, Database and Cloud": [
@@ -55,25 +55,22 @@
       "MongoDB",
       "MySQL",
       "PostgreSQL",
-      {
-        "alt": "Azure",
-        "icon": "microsoftazure"
-      },
+      "Microsoft-Azure",
       "AWS",
       "Firebase"
     ],
-    "Mobile": [
-      {
-        "alt": "React_Native",
-        "icon": "react",
-        "backgroundColor": "#424242"
-      },
-      "Expo"
-    ]
+    "Mobile": ["React-native", "Expo", "Swift"]
   },
   "projects": {
     "baseURI": "https://api.github.com/repos/mufi-ibrahimjee/",
-    "repositories": ["c2c", "portfolio"]
+    "repositories": [
+      "c2c",
+      "portfolio",
+      "ipay-backoffice",
+      "go-sqs-reader",
+      "warehousev2",
+      "payment-gateway"
+    ]
   },
   "experience": {
     "Work Experience": [

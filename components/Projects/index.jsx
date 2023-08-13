@@ -72,7 +72,6 @@ export default function Projects({ data }) {
           </Hidden>
         </Grid>
         <Grid container item xs={12} lg={6} direction="row" spacing={1}>
-          {console.log(data)}
           {!!data &&
             data.map((v, i) => (
               <>

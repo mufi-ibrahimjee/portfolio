@@ -14,34 +14,42 @@ import ReactTyped from "react-typed";
 import clsx from "clsx";
 import Image from "next/image";
 import Cancel from "@mui/icons-material/Cancel";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import EmailIcon from "@mui/icons-material/Email";
 import data from "../../utils/data.json";
+import { iconify } from "../../utils/iconify";
 
 import useStyles from "./styles";
 
 const { landing } = data;
 
+const getIcons = (name) => {
+  let giveIcon = <Cancel color="white" fontSize={36} />;
+  switch (name) {
+    case "linkedin":
+      giveIcon = <LinkedInIcon sx={{ fontSize: "60px" }} />;
+      break;
+    case "github":
+      giveIcon = <GitHubIcon sx={{ fontSize: "60px" }} />;
+      break;
+    case "gmail":
+      giveIcon = <EmailIcon sx={{ fontSize: "60px" }} />;
+      break;
+    default:
+      giveIcon = <Cancel color="white" fontSize={36} />;
+  }
+  return giveIcon;
+};
+
 const professionalDetails = landing.professionalDetails.map(
   ({ alt, icon, link }) => {
-    const ic = {
-      hex: "424242",
-      component: <Cancel color="white" fontSize={36} />,
-    };
+    const ico = iconify(icon);
+    const ic = getIcons(ico);
     return {
       alt,
       backgroundColor: `#${ic.hex}`,
-      icon: (
-        <svg
-          role="img"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          height="100%"
-          width="100%"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        >
-          <title>{icon}</title>
-          <path d={ic.path} fill="white" />
-        </svg>
-      ),
+      icon: ic,
       link,
     };
   }

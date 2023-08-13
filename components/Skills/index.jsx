@@ -8,46 +8,28 @@ import {
   useMediaQuery,
   useTheme,
   Zoom,
+  Box,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import Cancel from "@mui/icons-material/Cancel";
 import clsx from "clsx";
 import Image from "next/image";
 import { useRef } from "react";
-import simpleIcons from "simple-icons";
 import data from "../../utils/data.json";
 import useAnimate from "../../hooks/useAnimate";
-import { iconify } from "../../utils/iconify";
 
 const { skills } = data;
-
-// simpleIcons.get(
-//       typeof v === "string" ? iconify(v) : iconify(v.icon)
-//     ) ||
 
 const wrapper = (sk = []) =>
   sk.map((v) => {
     const ic = {
       title: v,
       hex: "424242",
-      component: <Cancel />,
+      component: v,
     };
     return {
       alt: v.alt || v || ic.title,
       backgroundColor: v.backgroundColor || `#${ic.hex}`,
-      icon: ic.component || (
-        <svg
-          role="img"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          height="100%"
-          width="100%"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        >
-          <title>{ic.title}</title>
-          <path d={ic.path} fill="white" />
-        </svg>
-      ),
+      icon: ic.component,
     };
   });
 
@@ -72,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
   },
   avatar: {
     height: theme.spacing(7),
-    width: theme.spacing(7),
+    width: theme.spacing(16),
     padding: theme.spacing(1.5),
   },
   ...iobj,

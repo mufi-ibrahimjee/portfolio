@@ -27,7 +27,7 @@ export default function ElevatorPitch() {
         variant="title7"
         color="textSecondary"
         sx={{
-          fontSize: "16px",
+          fontSize: "18px",
           textAlign: "justify",
           textJustify: "inter-word",
         }}

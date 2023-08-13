@@ -44,12 +44,6 @@ export const lightTheme = createTheme({
     MuiTypography,
     MuiButton,
   },
-  spacing: 4,
-  f1: "24px",
-  f2: "20px",
-  f3: "16px",
-  f4: "12px",
-  bold5: 500,
 });
 
 export const darkTheme = createTheme({
@@ -62,6 +56,26 @@ export const darkTheme = createTheme({
     text: {
       primary: grey[50],
       secondary: grey[50],
+    },
+    colors,
+    components: {
+      MuiTypography,
+      MuiButton,
+    },
+    typography: {
+      fontFamily: [
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "open-sans",
+        "Oxygen",
+        "Ubuntu",
+        "Cantarell",
+        "Fira Sans",
+        "Droid Sans",
+        "Helvetica Neue",
+        "sans-serif",
+      ].join(","), // to be discussed
     },
   },
 });

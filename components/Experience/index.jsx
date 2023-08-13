@@ -144,7 +144,6 @@ export default function Experience() {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          {console.log(thumbnail)}
                           <CardHeader
                             title={organization}
                             subheader={`${role} - ${type}`}

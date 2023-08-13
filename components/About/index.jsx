@@ -49,13 +49,13 @@ const useStyles = makeStyles((theme) => ({
     mb: 10,
   },
   avatar: {
-    height: theme.spacing(8),
-    width: theme.spacing(8),
+    height: theme.spacing(15),
+    width: theme.spacing(15),
     padding: theme.spacing(2),
   },
   dp: {
-    height: theme.spacing(Math.max(dpx, 28)),
-    width: theme.spacing(Math.max(dpx, 28)),
+    height: theme.spacing(Math.max(dpx, 30)),
+    width: theme.spacing(Math.max(dpx, 30)),
   },
   ...iobj,
 }));
