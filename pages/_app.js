@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import PropTypes from "prop-types";
 import { ThemeProvider } from "@mui/material/styles";
@@ -31,6 +32,13 @@ const MyApp = (props) => {
 
   return (
     <>
+      <Head>
+        <title> Mufaddal Ibrahimjee </title> {/* prevent zooming on Iphone  */}
+        <meta
+          name="viewport"
+          content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale = 1.0, user-scalable=no"
+        />
+      </Head>
       <Provider store={store}>
         <PersistGate persistor={store.persistor} loading={<div> Loading </div>}>
           <CacheProvider value={emotionCache}>

@@ -68,79 +68,70 @@
         "icon": "react",
         "backgroundColor": "#424242"
       },
-      "Expo",
-      "Android",
-      "Flutter"
+      "Expo"
     ]
   },
   "projects": {
-    "baseURI": "https://api.github.com/repos/kausko/",
-    "repositories": [
-      "Portfolio",
-      "Genrealize",
-      "Discord-Google-Drive-Bot",
-      "GitHits",
-      "Mail-em",
-      "JAutoLayout"
-    ]
+    "baseURI": "https://api.github.com/repos/mufi-ibrahimjee/",
+    "repositories": ["c2c", "portfolio"]
   },
   "experience": {
     "Work Experience": [
       {
-        "organization": "CloudDFN LLP",
-        "role": "Full Stack Developer",
-        "type": "Internship",
-        "startDate": "2020-07-20",
-        "endDate": "2021-01-20",
-        "city": "Mumbai",
-        "state": "Maharashtra",
-        "country": "India",
-        "url": "https://www.linkedin.com/company/clouddfn-llp/",
+        "organization": "iPay Africa",
+        "role": "Software Engineer",
+        "type": "Full time",
+        "startDate": "2020-07-21",
+        "endDate": "Till date",
+        "city": "Nairobi",
+        "state": "Nairobi",
+        "country": "Kenya",
+        "url": "https://www.linkedin.com/company/ipay-africa/?originalSubdomain=ke",
         "thumbnail": "/CDFN.jfif"
       },
       {
-        "organization": "NonceBlox Pvt. Ltd.",
+        "organization": "Code Park",
         "role": "Full Stack Developer",
-        "type": "Internship",
-        "startDate": "2021-07-01",
-        "endDate": "2021-10-01",
-        "city": "New Delhi",
-        "state": "Delhi",
+        "type": "Full time",
+        "startDate": "2018-07-01",
+        "endDate": "2021-07-01",
+        "city": "Bengaluru",
+        "state": "Karnataka",
         "country": "India",
-        "url": "https://www.linkedin.com/company/clouddfn-llp/",
+        "url": "https://www.linkedin.com/company/codepark/",
         "thumbnail": "https://www.nonceblox.com/ton3.png"
       }
     ],
     "Volunteer Experience": [
       {
-        "organization": "PICT IEEE Student Branch (PISB)",
-        "role": "Technical Head",
+        "organization": "ACM VIT",
+        "role": "App Development Lead",
         "type": "Member",
-        "startDate": "2019-07-01",
-        "endDate": "",
-        "city": "Pune",
-        "state": "Maharashtra",
+        "startDate": "2017-02-01",
+        "endDate": "2019-02-01",
+        "city": "Vellore",
+        "state": "Tamil Nadu",
         "country": "India",
-        "url": "https://www.linkedin.com/company/pisbieee/",
+        "url": "https://www.linkedin.com/company/acm-vit/?originalSubdomain=in",
         "thumbnail": "/PISB.jfif"
       },
       {
-        "organization": "Pictoreal",
-        "role": "Technical Head",
+        "organization": "Innovative Creative Unit",
+        "role": "ICT Tutor",
         "type": "Member",
         "startDate": "2019-07-01",
         "endDate": "2021-04-01",
-        "city": "Pune",
-        "state": "Maharashtra",
-        "country": "India",
-        "url": "https://www.linkedin.com/company/pictoreal/",
+        "city": "Nairobi",
+        "state": "Nairobi",
+        "country": "Kenya",
+        "url": "https://www.linkedin.com/in/innovativecreativeunit/?originalSubdomain=ke",
         "thumbnail": "/Picto.jfif"
       }
     ]
   },
   "about": {
-    "description": "I am a full-stack developer. I strive to make meaningful applications with the best UI practices. ",
-    "picture": "/profile.JPG",
+    "description": "I am a full-stack developer and an upcoming data scientist. I strive to make meaningful applications with the best UI practices and leverage data to make best decisions. ",
+    "picture": "/logo/profile.jpeg",
     "social": []
   }
 }

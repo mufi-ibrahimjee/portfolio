@@ -20,6 +20,7 @@
     "@mui/lab": "^5.0.0-alpha.68",
     "@mui/material": "^5.4.1",
     "@mui/styles": "^5.4.1",
+    "@primer/octicons-react": "^19.5.0",
     "axios": "^0.26.0",
     "clsx": "^2.0.0",
     "formik": "^2.2.9",
