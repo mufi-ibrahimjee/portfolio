@@ -89,11 +89,11 @@ export default function Experience() {
         <Hidden mdDown>
           <Fade in style={{ transitionDelay: "250ms" }}>
             <div>
-              <Image
+              <img
                 alt="Experience"
                 src="/logo/experience.svg"
-                width="996.46"
-                height="828.18"
+                width="550"
+                height="400"
               />
             </div>
           </Fade>

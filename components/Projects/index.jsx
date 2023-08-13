@@ -61,11 +61,11 @@ export default function Projects({ data }) {
           <Hidden mdDown>
             <Fade in style={{ transitionDelay: "250ms" }}>
               <div>
-                <Image
+                <img
                   alt="Projects"
                   src="/logo/projects.svg"
-                  width="1144"
-                  height="617.32"
+                  width="550"
+                  height="400"
                 />
               </div>
             </Fade>
