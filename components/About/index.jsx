@@ -2,7 +2,6 @@ import { Grid, Typography, Tooltip, Avatar } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import simpleIcons from "simple-icons";
 import clsx from "clsx";
-import Image from "next/image";
 import Cancel from "@mui/icons-material/Cancel";
 import { iconify } from "../../utils/iconify";
 import data from "../../utils/data.json";

@@ -2,7 +2,7 @@ import {
   Avatar,
   Fade,
   Grid,
-  Hidden,
+  Box,
   Tooltip,
   Typography,
   useMediaQuery,
@@ -111,11 +111,11 @@ export default function Landing() {
       {!mdDown && (
         <Fade in style={{ transitionDelay: "100ms" }}>
           <Grid item lg={6}>
-            <Image
+            <img
               src="/logo/landing.svg"
               alt="Landing"
-              width="900.94"
-              height="787"
+              width="500"
+              height="600"
             />
           </Grid>
         </Fade>
