@@ -1,4 +1,6 @@
 import React, { useCallback } from "react";
+
+import PropTypes from "prop-types";
 import {
   AppBar,
   Container,
@@ -10,16 +12,15 @@ import {
 } from "@mui/material";
 
 import { makeStyles } from "@mui/styles";
+import Brightness4 from "@mui/icons-material/Brightness4";
+import Brightness7 from "@mui/icons-material/Brightness7";
 import Landing from "../components/Landing";
-// import Skills from "../components/Skills";
+import Skills from "../components/Skills";
 // import Projects from "../components/Projects";
 // import Experience from "../components/Experience";
 // import About from "../components/About";
 import data from "../utils/data.json";
 import { darkTheme, lightTheme } from "../styles/theme";
-
-import Brightness4 from "@mui/icons-material/Brightness4";
-import Brightness7 from "@mui/icons-material/Brightness7";
 
 const { name, projects } = data;
 
@@ -65,13 +66,17 @@ const Home = ({ setTheme }) => {
       <Toolbar className={classes.toolbar} />
       <Container>
         <Landing />
-        {/* <Skills />
-        <Projects data={projects} />
+        <Skills />
+        {/* <Projects data={projects} />
         <Experience />
         <About /> */}
       </Container>
     </div>
   );
+};
+
+Home.propTypes = {
+  setTheme: PropTypes.func.isRequired,
 };
 
 export default Home;
