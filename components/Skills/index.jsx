@@ -8,11 +8,9 @@ import {
   useMediaQuery,
   useTheme,
   Zoom,
-  Box,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import clsx from "clsx";
-import Image from "next/image";
 import { useRef } from "react";
 import data from "../../utils/data.json";
 import useAnimate from "../../hooks/useAnimate";

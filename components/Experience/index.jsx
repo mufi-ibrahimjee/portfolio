@@ -11,7 +11,6 @@ import {
   useTheme,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import Image from "next/image";
 import DateRange from "@mui/icons-material/DateRange";
 import LocationCity from "@mui/icons-material/LocationCity";
 import { useRef } from "react";

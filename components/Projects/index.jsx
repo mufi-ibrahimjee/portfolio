@@ -1,4 +1,3 @@
-import Link from "next/link";
 import PropTypes from "prop-types";
 import {
   Card,
@@ -11,12 +10,10 @@ import {
   Grid,
   Hidden,
   Typography,
-  Box,
-  Stack,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { RepoForkedIcon, RepoIcon, StarIcon } from "@primer/octicons-react";
-import Image from "next/image";
+
 import { useRef } from "react";
 import useAnimate from "../../hooks/useAnimate";
 

@@ -12,7 +12,6 @@ import {
 
 import ReactTyped from "react-typed";
 import clsx from "clsx";
-import Image from "next/image";
 import Cancel from "@mui/icons-material/Cancel";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
