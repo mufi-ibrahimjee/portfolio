@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 // import {
 //   Card,
 //   CardActionArea,
@@ -125,3 +126,7 @@ export default function Projects({ data }) {
   // );
   return <></>;
 }
+
+Projects.propTypes = {
+  data: PropTypes.shape({}).isRequired,
+};

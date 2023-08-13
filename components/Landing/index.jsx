@@ -13,10 +13,11 @@ import {
 import ReactTyped from "react-typed";
 import clsx from "clsx";
 import Image from "next/image";
-import data from "../../utils/data.json";
 import Cancel from "@mui/icons-material/Cancel";
+import data from "../../utils/data.json";
 
 import useStyles from "./styles";
+
 const { landing } = data;
 
 const professionalDetails = landing.professionalDetails.map(
@@ -27,7 +28,7 @@ const professionalDetails = landing.professionalDetails.map(
     };
     return {
       alt,
-      backgroundColor: "#" + ic.hex,
+      backgroundColor: `#${ic.hex}`,
       icon: (
         <svg
           role="img"
@@ -46,7 +47,7 @@ const professionalDetails = landing.professionalDetails.map(
   }
 );
 
-export let iobj = {};
+export const iobj = {};
 
 console.log(professionalDetails);
 professionalDetails.forEach(({ alt, backgroundColor }) => {
@@ -83,7 +84,7 @@ export default function Landing() {
           {professionalDetails.map(({ alt, icon, link }, i) => (
             <Grid item key={i}>
               <a href={link} target="_blank" rel="noopener noreferrer">
-                <Zoom in={true} style={{ transitionDelay: `${100 * i}ms` }}>
+                <Zoom in style={{ transitionDelay: `${100 * i}ms` }}>
                   <Tooltip title={alt} placement="top">
                     <Avatar
                       variant="rounded"
@@ -100,7 +101,7 @@ export default function Landing() {
       </Grid>
 
       {!mdDown && (
-        <Fade in={true} style={{ transitionDelay: "100ms" }}>
+        <Fade in style={{ transitionDelay: "100ms" }}>
           <Grid item lg={6}>
             <Image
               src="/logo/landing.svg"

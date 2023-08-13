@@ -41,8 +41,8 @@ const Home = ({ setTheme }) => {
   const theme = useTheme();
 
   const toggleTheme = useCallback(() => {
-    setTheme((theme) =>
-      theme.palette.type === "dark" ? lightTheme : darkTheme
+    setTheme((theme1) =>
+      theme1.palette.type === "dark" ? lightTheme : darkTheme
     );
   }, [setTheme]);
 

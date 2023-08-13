@@ -1,5 +1,4 @@
 import { makeStyles } from "@mui/styles";
-import { iobj } from "./index";
 
 const useStyles = makeStyles((theme) => ({
   cont: {
@@ -15,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
     width: theme.spacing(8),
     padding: theme.spacing(2),
   },
-  ...iobj,
 }));
 
 export default useStyles;

@@ -8,7 +8,7 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <title>Mufaddal Ibrahimjee</title>
-          <link rel="icon" href={"/logo/favicon.ico"} />
+          <link rel="icon" href="/logo/favicon.ico" />
           {/* prevent zooming on Iphone  */}
           <meta
             name="viewport"

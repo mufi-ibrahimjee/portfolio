@@ -2,10 +2,11 @@ import { createTheme } from "@mui/material/styles";
 import { black, deepOrange, grey } from "@mui/material/colors";
 import colors from "./colors";
 import data from "../utils/data.json";
-const { theme } = data;
 
 import MuiTypography from "./MuiTypography";
 import MuiButton from "./MuiButton";
+
+const { theme } = data;
 
 export const lightTheme = createTheme({
   palette: {
