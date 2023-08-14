@@ -1,9 +1,11 @@
 import React from "react";
 
-import { Stack, Typography } from "@mui/material";
+import { Stack, Typography, Box, useMediaQuery, useTheme } from "@mui/material";
 import ShowChartIcon from "@mui/icons-material/ShowChart";
 
 export default function ElevatorPitch() {
+  const theme = useTheme();
+  const mdDown = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <Stack spacing={3} alignItems="center">
       <Stack
@@ -66,6 +68,19 @@ export default function ElevatorPitch() {
         team or project I am a part of. Thank you for considering my skills and
         experience.
       </Typography>
+      <Box
+        sx={!mdDown ? { width: 500, height: 300 } : { width: 300, height: 200 }}
+      >
+        <iframe
+          src="https://www.youtube.com/embed/boNma3M_2WA"
+          width="100%"
+          height="100%"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+          title="video"
+        />
+      </Box>
     </Stack>
   );
 }
