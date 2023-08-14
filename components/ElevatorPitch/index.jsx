@@ -66,7 +66,8 @@ export default function ElevatorPitch() {
         In conclusion, with my proven track record and dedication to excellence,
         I am confident that I will bring significant value and success to any
         team or project I am a part of. Thank you for considering my skills and
-        experience.
+        experience. You can contact me through my email or message me via
+        linkedin. Thank you!
       </Typography>
       <Box
         sx={!mdDown ? { width: 500, height: 300 } : { width: 300, height: 200 }}
